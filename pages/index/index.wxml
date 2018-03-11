@@ -1,0 +1,46 @@
+<view class="app">
+  <view class="ele-container">
+    <swiper autoplay="true" circular="true" interval="3000" duration="1000">
+      <block wx:for="{{imgUrls}}">
+          <swiper-item class="swiper-item">
+              <image src="{{item}}"></image>
+          </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="ele-container">
+    <navigator url="../notice/notice" class="ele-container_title">
+      <text class="ele-container_title__text">助手公告:</text>
+      <span>财大午之后奶茶店急需兼职2名</span>
+    </navigator>
+  </view>
+  <view class="ele-container">
+    <view class="grids">
+      <navigator url="../job/job" class="grid">
+          <view class="grid__icon"><image src="../../images/jianzhi.png" alt=""/></view>
+          <text class="grid__label">校园兼职</text>
+      </navigator>
+      <navigator url="../entertainment/entertainment" class="grid">
+          <view class="grid__icon"><image src="../../images/yule_03.png" alt=""/></view>
+          <text class="grid__label">交友娱乐</text>
+      </navigator>
+      <navigator url="../association/association" class="grid">
+          <view class="grid__icon"><image src="../../images/yujian_03.png" alt=""/></view>
+          <text class="grid__label">社团活动</text>
+      </navigator>
+      <navigator url="../People-nearby/People-nearby" class="grid">
+          <view class="grid__icon"><image src="../../images/tantan_03.png" alt=""/></view>
+          <text class="grid__label">附近的人</text>
+      </navigator>
+      <navigator url="../Wolves-kill/Wolves-kill" class="grid">
+          <view class="grid__icon"><image src="../../images/lrs_03.png" alt=""/></view>
+          <text class="grid__label">约狼人杀</text>
+      </navigator>
+      <navigator url="../public-service/public-service" class="grid">
+          <view class="grid__icon"><image src="../../images/gongyi_03.png" alt=""/></view>
+          <text class="grid__label">公益活动</text>
+      </navigator>
+    </view>
+   </view>
+  <!-- <view class="element suspension"></view>  -->
+</view>

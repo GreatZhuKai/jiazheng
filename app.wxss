@@ -1,0 +1,27 @@
+/* 引入weui样式 */
+@import "./common/weui.wxss";
+
+html, body {
+	width: 100%;
+	font-size: 14px;
+  color: #444;
+	background-repeat: repeat;
+  overflow-x: hidden;
+}
+
+.page {
+  background-color: #fff;
+  display: flex;
+  /* 纵向排列 */
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.ele-container {
+  position:relative;
+  width:100%;
+  max-width:100%;
+  clear:both;
+}
+    

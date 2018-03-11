@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/job/job",
+    "pages/pages1/pages1",
+    "pages/pages2/pages2",
+    "pages/notice/notice",
+    
+    "pages/entertainment/entertainment",
+    "pages/association/association",
+    "pages/People-nearby/People-nearby",
+    "pages/public-service/public-service",
+    "pages/Wolves-kill/Wolves-kill"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "大学生活助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ddd9bd",
+    "list": [
+      {
+        "iconPath": "images/5a2105f316761.png",
+        "selectedIconPath": "images/5a2105f3167bb.png",
+        "text": "校园服务",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "iconPath": "images/5a2105f36d6c8.png",
+        "selectedIconPath": "images/5a2105f36d711.png",
+        "text": "搜索附近",
+        "pagePath": "pages/pages1/pages1"
+      },
+      {
+        "iconPath": "images/5a2105f3d3ff1.png",
+        "selectedIconPath": "images/5a2105f3d4038.png",
+        "text": "个人中心",
+        "pagePath": "pages/pages2/pages2"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

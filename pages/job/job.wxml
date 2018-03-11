@@ -1,0 +1,33 @@
+<scroll-view class="ele-container" scoll-y="true">
+     <!-- navigator跳转分为两个状态一种是关闭当前页面一种是不关闭当前页面。用redirect属性指定 -->
+     <!-- <navigator url="" wx:for="{{jobs}}">
+         <view class="item">
+             <image class="poster" src="{{item.images.small}}"></image>
+             <view class="meta">
+                 <text class="title">{{item.title}}</text>
+                 <text class="sub-title">{{item.original_title}} ({{item.year}})</text>
+                 <text class="artists">
+                     <text wx:for="{{item.directors}}">{{item.name}}</text>
+                 </text>
+             </view>
+             <view class="rating">
+                 <text>{{item.rating.average}}</text>
+             </view>
+         </view>
+     </navigator> -->
+     <block wx:for="{{jobs}}" wx:key="{{index}}">
+        <view class="element">
+            <view class="element_picture">
+                <image src="../../images/jianzhi.png" />
+            </view>
+            <view class="element_right">
+                <view class="element_name">{{jobs[index].jobName}}</view>
+                <view class="element_detail">{{jobs[index].detaile}}</view>
+                <view class="element_right__ft">
+                  <view class="element_rice">{{jobs[index].price}}</view>
+                  <view class="element button">立即预约</view>
+                </view>
+            </view>
+        </view>
+    </block>
+ </scroll-view>
